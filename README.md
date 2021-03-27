@@ -46,6 +46,7 @@ python start.py --file_name="사용하는 파일"
 
 # 예측하기
 python make_predict.py --config_filename=data/model/트레이닝시킨폴더/config_100.yaml
+
 데이터 준비할때 남겨둔 20%의 데이터로 12시간 후 까지 예측합니다
 코드 다시 수정하여 더 나중 시간까지 예측하도록(데이터 test셋 제외) 수정할 예정입니다
 
