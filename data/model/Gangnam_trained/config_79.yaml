@@ -1,0 +1,42 @@
+base_dir: data/model
+data:
+  batch_size: 8
+  dataset_dir: data/Seoul_all
+  graph_pkl_filename: data/sensor_graph/adj_mx_Seoul_all.pkl
+  test_batch_size: 8
+  val_batch_size: 8
+log_level: INFO
+model:
+  cl_decay_steps: 2000
+  filter_type: dual_random_walk
+  horizon: 12
+  input_dim: 2
+  l1_decay: 0
+  max_diffusion_step: 2
+  num_nodes: 506
+  num_rnn_layers: 2
+  output_dim: 1
+  rnn_units: 64
+  seq_len: 12
+  use_curriculum_learning: true
+train:
+  base_lr: 0.01
+  dropout: 0
+  epoch: 79
+  epochs: 100
+  epsilon: 0.001
+  global_step: 56160
+  log_dir: data/model\dcrnn_DR_2_h_12_64-64_lr_0.01_bs_8_0313133728/
+  lr_decay_ratio: 0.1
+  max_grad_norm: 5
+  max_to_keep: 100
+  min_learning_rate: 2.0e-06
+  model_filename: data/model\dcrnn_DR_2_h_12_64-64_lr_0.01_bs_8_0313133728/models-2.3957-56160
+  optimizer: adam
+  patience: 50
+  steps:
+  - 20
+  - 30
+  - 40
+  - 50
+  test_every_n_epochs: 10

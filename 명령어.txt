@@ -1,0 +1,12 @@
+`데이터준비, 그래프구성, 트레이닝, 베이스라인비교
+
+Python start.py --file_name="파일이름"
+
+
+
+
+Make predict
+
+python make_predict.py --config_filename=data/model/~~예측된모델폴더/config_100.yaml
+
+
