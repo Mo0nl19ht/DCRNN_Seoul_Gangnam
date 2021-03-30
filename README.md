@@ -1,15 +1,20 @@
 # Diffusion Convolutional Recurrent Neural Network: Data-Driven Traffic Forecasting
  논문 <https://arxiv.org/abs/1707.01926>
- 시공간 그래프내에서 예측합니다
- ## 공간 - Diffusion Convolution
-  공간적 ->  bidirectional random walks on the graph
- ## 시간 - RNN
-  시간 -> the encoder-decoder architecture with scheduled sampling
-
-# 도로 네트워크의 트래픽 예측
+ ## 시공간 Dependency를 잡기위해
+  ### 공간 - Diffusion Convolution
+   공간적 ->  bidirectional random walks on the graph
+   
+   GCN의 개념 들어감
+    - 가중치 매트릭스를 이용하여(곱하여) 그래프를 CONVOLUTION 함
+    - 
+   
+  ### 시간 - RNN
+   시간 -> the encoder-decoder architecture with scheduled sampling
+ 
+ ## 도로 네트워크의 트래픽 예측
  - 과거 교통 속도와 기본 도로망이 주어진 센서 네트워크의 미래 교통 속도를 예측하는 것이다
 
-# 어려움
+ # 어려움
  - 복잡한 시공간의존성
  - 장기적 예측의 어려움,  Recurring incidents -> 러시아워, 사고 가 비일관성을 일으킨다 
 
